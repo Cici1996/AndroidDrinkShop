@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        //test admin xxxxxx
+      
         mService = Common.getApi();
 
         btn_continue = (Button)findViewById(R.id.btn_continue);
@@ -206,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
                 md.update(signature.toByteArray());
                 Log.d("KEYHASH", Base64.encodeToString(md.digest(),Base64.DEFAULT));
             }
+
 
         } catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
