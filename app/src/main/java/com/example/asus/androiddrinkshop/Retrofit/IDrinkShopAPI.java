@@ -20,4 +20,10 @@ public interface IDrinkShopAPI {
                                @Field("name") String name,
                                @Field("birthDate") String birtDate,
                                @Field("address") String address);
+
+
+
+    @FormUrlEncoded
+    @POST("getUser.php")
+    Call<User> getUserInformation(@Field("phone") String phone);
 }
