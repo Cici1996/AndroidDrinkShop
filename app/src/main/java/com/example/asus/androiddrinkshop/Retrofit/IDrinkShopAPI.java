@@ -1,6 +1,7 @@
 package com.example.asus.androiddrinkshop.Retrofit;
 
 import com.example.asus.androiddrinkshop.Model.Banner;
+import com.example.asus.androiddrinkshop.Model.Category;
 import com.example.asus.androiddrinkshop.Model.CheckUserResponse;
 import com.example.asus.androiddrinkshop.Model.User;
 
@@ -34,4 +35,7 @@ public interface IDrinkShopAPI {
 
     @GET("getBanner.php")
     Observable<List<Banner>> getBanner();
+
+    @GET("getMenu.php")
+    Observable<List<Category>> getMenu();
 }
