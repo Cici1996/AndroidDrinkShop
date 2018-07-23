@@ -3,6 +3,7 @@ package com.example.asus.androiddrinkshop.Retrofit;
 import com.example.asus.androiddrinkshop.Model.Banner;
 import com.example.asus.androiddrinkshop.Model.Category;
 import com.example.asus.androiddrinkshop.Model.CheckUserResponse;
+import com.example.asus.androiddrinkshop.Model.Drink;
 import com.example.asus.androiddrinkshop.Model.User;
 
 import java.util.List;
@@ -26,6 +27,11 @@ public interface IDrinkShopAPI {
                                @Field("name") String name,
                                @Field("birthDate") String birtDate,
                                @Field("address") String address);
+
+
+    @FormUrlEncoded
+    @POST("getDrink.php")
+    Observable<List<Drink>> getDrink(@Field("menuid") String menuid);
 
 
 
