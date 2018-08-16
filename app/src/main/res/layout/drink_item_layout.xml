@@ -18,17 +18,18 @@
 
         <ImageView
             android:id="@+id/image_product"
+            android:layout_gravity="center"
             android:layout_width="100dp"
             android:layout_height="150dp" />
 
         <TextView
             android:id="@+id/txt_drink_name"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:gravity="center"
             android:text="Es Cepal Milo"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textStyle="bold" />
 
 
         <LinearLayout
@@ -57,6 +58,15 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ADD TO CART"
+            android:textSize="10sp"
+            android:layout_gravity="center_horizontal"
+            />
 
     </LinearLayout>
 
